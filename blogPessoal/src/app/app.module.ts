@@ -12,6 +12,8 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { from } from 'rxjs';
+import { TesteComponent } from './teste/teste.component';
+import { TemaComponent } from './tema/tema.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { from } from 'rxjs';
     RodapeComponent,
     EntrarComponent,
     CadastrarComponent,
-    InicioComponent
+    InicioComponent,
+    TesteComponent,
+    TemaComponent
   ],
   imports: [
     BrowserModule,
