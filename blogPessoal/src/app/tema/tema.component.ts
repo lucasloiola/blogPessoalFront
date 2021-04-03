@@ -32,6 +32,12 @@ export class TemaComponent implements OnInit {
     })
   }
 
+  findByIdTema() {
+    this.temaService.getByIdTema(this.tema.id).subscribe((resp: Tema) => {
+      this.tema = resp;
+    })
+  }
+
   cadastrar(){
     this.temaService.postTema(this.tema).subscribe((resp: Tema) => {
       this.tema = resp
